@@ -8,8 +8,6 @@ func newRouter() *http.ServeMux {
 	router := http.NewServeMux()
 
 	// routes
-	router.Handle("/", index())
-	router.Handle("/healthz", healthz())
-
+	router.Handle("/", hello())
 	return router
 }
